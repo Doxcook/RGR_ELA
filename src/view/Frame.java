@@ -7,12 +7,14 @@ public class Frame extends JFrame {
     private final Panel panel;
 
     public Frame() {
-        setTitle("Calculator");
+
+        setTitle("Кулькулятор");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         panel = new Panel();
         add(panel, BorderLayout.CENTER);
-        pack();
+        setSize(600,150);
+        setResizable(false);
         setLocationRelativeTo(null);
         setVisible(true);
     }
